@@ -73,7 +73,7 @@ void show_arr(int arr[],  int size) {
 int random_array(int arr1[], int length, int from, int to) {
 srand(time(0));
     for (int i = 0; i < length; ++i) {
-      arr1[i] = rand () % (to-from)+from;
+      arr1[i] = rand () % (to+1-from)+from;
 }
     return arr1[length];
 }
